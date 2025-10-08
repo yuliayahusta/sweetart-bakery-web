@@ -9,6 +9,7 @@
 - Юлія Ягуста ЗК-31
 
 # Cтруктура
+```
 sweetart-bakery-web/
 │
 ├─ index.html           # Головна сторінка
@@ -21,3 +22,4 @@ sweetart-bakery-web/
 │   ├─ catalog_brown.jpg
 │   └─ ... 
 └─ README.md            # Опис проєкту
+```
