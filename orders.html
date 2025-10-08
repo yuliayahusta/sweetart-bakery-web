@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order — SweetArt Bakery</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">SweetArt Bakery</h1>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="catalog.html" class="nav-link">Catalog</a></li>
+                <li><a href="contacts.html" class="nav-link">Contacts</a></li>
+                <li><a href="orders.html" class="nav-link active">Order now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main section with image and form side by side -->
+    <main>
+        <table width="100%">
+            <tr>
+                <td width="60%" valign="top">
+                    <h2>Place Your Order</h2>
+                    <p>Fill out the form below to order your favorite cake or pastry. You can also upload your own design and customize the flavor.</p>
+
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend><b>1. Choose Product</b></legend>
+
+                            <label for="category">Category:</label><br>
+                            <select id="category" name="category" required>
+                                <option value="">-- Select Category --</option>
+                                <option value="cakes">Cakes</option>
+                                <option value="cupcakes">Cupcakes</option>
+                                <option value="desserts">Desserts</option>
+                                <option value="custom">Custom</option>
+                            </select>
+                            <br><br>
+
+                            <label for="product">Product Name:</label><br>
+                            <select id="product" name="product">
+                                <option value="">-- Select Product --</option>
+                                <option value="chocolate_cake">Chocolate Cake</option>
+                                <option value="red_velvet">Red Velvet</option>
+                                <option value="berry_tart">Berry Tart</option>
+                                <option value="vanilla_cupcake">Vanilla Cupcake</option>
+                            </select>
+                            <br><br>
+
+                            <p><i>If you want something unique, upload your own design below:</i></p>
+                            <label for="design">Upload Design:</label><br>
+                            <input type="file" id="design" name="design" accept="image/*">
+                            <br><br>
+
+                            <label for="flavor">Choose Flavor:</label><br>
+                            <select id="flavor" name="flavor">
+                                <option value="">-- Select Flavor --</option>
+                                <option value="chocolate">Chocolate</option>
+                                <option value="vanilla">Vanilla</option>
+                                <option value="strawberry">Strawberry</option>
+                                <option value="caramel">Caramel</option>
+                            </select>
+                        </fieldset>
+
+                        <br>
+
+                        <fieldset>
+                            <legend><b>2. Contact Information</b></legend>
+
+                            <label for="name">Full Name:</label><br>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <br><br>
+
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                            <br><br>
+
+                            <label for="phone">Phone Number:</label><br>
+                            <input type="tel" id="phone" name="phone" placeholder="+380..." required>
+                        </fieldset>
+
+                        <br>
+
+                        <fieldset>
+                            <legend><b>3. Additional Notes</b></legend>
+                            <textarea name="notes" rows="4" cols="50" placeholder="Any special requests or delivery details..."></textarea>
+                        </fieldset>
+
+                        <br>
+
+                        <input type="submit" value="Submit Order">
+                        <input type="reset" value="Clear Form">
+                    </form>
+                </td>
+
+                <td width="40%" align="right" valign="top">
+                    <img src="images/cake_decor.jpg" alt="Decorative Cake" width="400" hspace="20" vspace="10">
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2025 SweetArt Bakery | Made with love</p>
+    </footer>
+</body>
+</html>
