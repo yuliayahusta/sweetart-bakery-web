@@ -1,0 +1,103 @@
+/* Обмеження контенту та центрування */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+}
+
+/* Структура Header */
+header {
+    background-color: #D8C9F0; 
+}
+
+/* Навігація (Flexbox) */
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 0;
+    padding-left: 15px;
+    padding-right: 15px; /
+}
+
+.logo {
+    font-family: 'Pacifico', cursive; 
+    color: #8A5DD0; 
+    font-size: 1.8rem;
+    padding-left: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; 
+    padding-right: 15px;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+/* Секція Hero */
+.hero {
+    text-align: center;
+    padding: 150px 20px; 
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px; 
+}
+
+/* Головний контент (Main) */
+section {
+    padding: 100px 0; 
+    margin-bottom: 0; 
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+.reviews {
+    padding-left: 0 !important; 
+    padding-right: 0 !important;
+}
+
+main section:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #5C3FA0; 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 0; 
+}
+
+
+/* АДАПТИВНІСТЬ (Мобільні) */
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-direction: column; 
+        text-align: center;
+    }
+    
+    .nav-links {
+        flex-direction: column; 
+        width: 100%;
+        margin-top: 15px;
+        align-items: center;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    section {
+        padding: 50px 0; 
+    }
+}

@@ -1,0 +1,501 @@
+/* Features - Список переваг (Flexbox) */
+.features ul {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    text-align: center;
+}
+
+.features li {
+    font-size: 1.2rem; 
+    font-weight: 600; 
+    margin: 15px 30px; 
+    min-width: 180px; 
+    list-style-type: none; 
+}
+
+
+.occasions .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    gap: 40px; 
+}
+
+.occasions .card {
+    flex-basis: calc(33% - 30px);
+    min-width: 250px; 
+    text-align: center;
+    border: 1px solid #D8C9F0;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 20px; 
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.3s ease;
+}
+
+.occasions .card:hover {
+    transform: translateY(-5px); 
+}
+
+.occasions .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px; 
+}
+
+.occasions .card p {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 5px; 
+    margin-bottom: 0; 
+}
+
+.bestsellers .products {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 40px; 
+}
+
+.bestsellers .product {
+    flex-basis: calc(33% - 30px); 
+    min-width: 280px; 
+    padding: 0; 
+    background-color: #D8C9F0; 
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bestsellers .product img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px 4px 0 0;
+}
+
+.bestsellers .product h4 {
+    color: #7B4AE2;
+    padding-top: 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bestsellers .product p {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+main > .btn { 
+    display: inline-block;
+    width: auto; 
+    margin: 0; 
+    text-align: left; 
+}
+
+.center-button-wrapper {
+    text-align: center; 
+    
+    padding-top: 60px; 
+    padding-bottom: 80px; 
+    
+    width: 100%; 
+    display: block;
+}
+
+/* Адаптивність для карток на менших екранах */
+@media (max-width: 1000px) {
+    .occasions .card,
+    .bestsellers .product {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .occasions .card,
+    .bestsellers .product {
+        flex-basis: 95%; 
+        margin: 10px auto;
+    }
+}
+
+/* Стилі для сторінки Orders */
+.order-form-container { 
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0; 
+}
+
+.order-form {
+    flex-basis: 60%; 
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+.order-image {
+    flex-basis: 35%;
+    min-width: 250px;
+    text-align: center;
+}
+
+.order-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #D8C9F0;
+}
+
+form h4 {
+    color: #7B4AE2;
+    font-size: 1.3rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #D8C9F0;
+    padding-bottom: 5px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%; 
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #D8C9F0;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #8A5DD0; 
+    box-shadow: 0 0 5px rgba(138, 93, 208, 0.5);
+    outline: none;
+}
+
+label {
+    display: block; 
+    font-weight: 600;
+    margin-top: 10px;
+    color: #5C3FA0;
+}
+
+input[type="submit"] {
+   width: auto;
+    margin-right: 15px;
+    padding: 0.8em 2em;
+    background-color: #E94C88; 
+    color: #FFFFFF;
+    border: 2px solid #E94C88;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #F28BB2;
+    border-color: #F28BB2;
+}
+
+input[type="reset"] {
+   
+    padding: 0.8em 2em;
+    background-color: #F28BB2; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    padding: 0.8em 2em;
+    background-color: #FFFFFF; 
+    color: #E94C88;
+    border: 2px solid #E94C88; 
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    background-color: #E94C88; 
+    color: #FFFFFF; 
+}
+
+input:required:valid {
+    border-left: 5px solid #00AA00;
+}
+
+input:required:invalid:not(:placeholder-shown) {
+    border-left: 5px solid #CC0000; 
+}
+
+
+input[type="file"] {
+    border: 1px dashed #D8C9F0;
+    padding: 10px;
+    width: auto;
+}
+
+
+@media (max-width: 900px) {
+    .order-form-container, 
+    main {
+        display: block; 
+        padding: 0 15px;
+    }
+
+    .order-form, .order-image {
+        flex-basis: 100%;
+        padding-right: 0;
+    }
+
+    .order-image {
+        margin-top: 40px;
+    }
+}
+
+/* Стилі для сторінки Catalog */
+.section-title {
+    text-align: center;
+    color: #8A5DD0; 
+}
+
+/* 1. Секція категорій (Flexbox) */
+.categories-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px; 
+    max-width: 1000px;
+    margin: 0 auto 80px auto; 
+}
+
+.category-item {
+    flex-basis: 30%; 
+    min-width: 250px;
+    text-align: center;
+    background-color: #D8C9F0;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+.category-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    display: block;
+    margin-bottom: 15px;
+}
+
+.category-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #5C3FA0;
+    margin: 0;
+}
+
+/* 2. Секція всіх продуктів (Grid) */
+.product-category {
+    margin-bottom: 60px; 
+}
+
+.product-category-title {
+    color: #7B4AE2; 
+    border-bottom: 2px solid #D8C9F0;
+    padding-bottom: 10px;
+    margin-left: 15px; 
+    margin-right: 15px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 40px; 
+    margin-top: 40px;
+    padding: 0 15px;
+}
+
+.product-item {
+    background-color: #FFFFFF; 
+    border: 1px solid #D8C9F0;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product-name {
+    color: #8A5DD0;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.product-flavor, .product-price {
+    font-size: 1rem;
+    color: #5C3FA0;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-weight: 700;
+    color: #E94C88; 
+    margin-bottom: 15px;
+}
+
+
+.order-button {
+    display: inline-block;
+    padding: 0.6em 1.5em; 
+    background-color: #7B4AE2; 
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #5C3FA0; 
+    text-decoration: none;
+}
+
+/* Стилі для сторінки Contacts */
+.section-subtitle {
+    max-width: 900px;
+    margin: 0 auto 60px auto; 
+    text-align: center;
+    font-style: italic;
+}
+
+/* Flexbox для розміщення контактних елементів */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #D8C9F0; 
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+    flex-basis: calc(25% - 20px); 
+    min-width: 200px; 
+    text-align: center;
+}
+
+.contact-heading {
+    font-size: 1.2rem;
+    color: #7B4AE2; 
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.contact-text {
+    font-size: 1rem;
+    color: #5C3FA0;
+    margin-bottom: 5px;
+}
+
+.contact-link {
+    font-weight: 600;
+}
+
+/* Стилізація карти */
+.map-section {
+    text-align: center; 
+}
+
+.map-container {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    overflow: hidden;
+    padding: 0 15px; 
+}
+
+.map-frame {
+    width: 100%; 
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптивність для контактів */
+
+@media (max-width: 1000px) {
+    .contact-item {
+        flex-basis: calc(50% - 10px); 
+    }
+}
+
+@media (max-width: 550px) {
+    .contact-item {
+        flex-basis: 100%; 
+        margin-bottom: 15px;
+    }
+    .contact-info {
+        padding: 20px;
+    }
+}
