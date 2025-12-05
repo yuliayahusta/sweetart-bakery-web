@@ -17,6 +17,7 @@
                 <li><a href="contacts.html" class="nav-link">Contacts</a></li>
                 <li><a href="orders.html" class="nav-link">Order now</a></li>
             </ul>
+            <button id="theme-toggle" class="btn">Change theme</button>
         </nav>
 
         <section class="hero">
@@ -27,17 +28,6 @@
     </header>
 
 <main>
-        <!-- Features -->
-        <section class="features">
-            <h3>Our Advantages</h3>
-            <ul>
-                <li>Freshly baked daily</li>
-                <li>Custom orders</li>
-                <li>Convenient location</li>
-                <li>Natural ingredients</li>
-            </ul>
-        </section>
-
         <!-- Occasions -->
         <section class="occasions">
             <h3>For Any Occasion</h3>
@@ -83,11 +73,23 @@
             <a href="orders.html" class="btn">Order Now</a>
         </div>
 
+        <section class="about-us">
+            <h3>A Bit About Us</h3>
+            <p>SweetArt Bakery has been crafting delicious, hand-made desserts since 2025. We pride ourselves on using only natural, high-quality ingredients sourced locally. Every cake, cupcake, and pastry is baked with passion and attention to detail, ensuring a perfect treat for every moment. Our goal is simple: to make your celebrations sweeter and more memorable.</p>
+            <p class="accordion-content">
+                In addition to our classic menu, we specialize in custom-designed celebration cakes for birthdays, weddings, and corporate events. Our head pastry chef, Maria, has over ten years of experience in fine European patisserie and is dedicated to bringing your unique vision to life. We believe in sustainable practices and minimizing waste, and we are constantly developing new, exciting flavors based on seasonal ingredients. We invite you to visit us and experience the SweetArt difference!
+            </p>
+            <div class="center-button-wrapper"> 
+                <button id="toggle-about" class="btn">Show more</button>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2025 SweetArt Bakery. All rights reserved.</p>
+        <p><span id="current-date"></span> © 2025 SweetArt Bakery. All rights reserved.</p>
     </footer>
 
+    <script src="./js/main.js" defer></script>
 </body>
 </html>
